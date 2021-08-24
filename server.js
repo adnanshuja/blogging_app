@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
-const routes = require("./routes/index");
+// const routes = require("./routes/index");
 const runMig = require("./initialize");
 const hostname = "127.0.0.1";
 const port = 80;
@@ -15,7 +15,7 @@ runMig();
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-routes(app);
+// routes(app);
 
 app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
