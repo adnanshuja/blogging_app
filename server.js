@@ -12,6 +12,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 runMig();
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 routes(app);
 
 app.listen(port, hostname, () => {
