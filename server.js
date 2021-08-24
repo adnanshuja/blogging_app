@@ -4,7 +4,7 @@ const logger = require("morgan");
 const routes = require("./routes/index");
 const runMig = require("./initialize");
 const hostname = "127.0.0.1";
-const port = 3001;
+const port = 5000;
 
 const app = express();
 app.use(logger("dev"));
