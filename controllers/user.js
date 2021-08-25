@@ -22,6 +22,8 @@ const login = async (req, res) => {
                 res.status(200).send({
                     status: 200,
                     message: 'Logged in successfully!',
+                    token: 'abc123',
+                    user: user
                 });
             }
 
