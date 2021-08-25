@@ -16,7 +16,14 @@ module.exports = {
       description: {
         type: Sequelize.TEXT,
       },
-
+      createdAt: {
+        type: Sequelize.DATE,
+        field: 'created_at',
+      },
+      updatedAt: {
+        type: Sequelize.DATE,
+        field: 'updated_at',
+      },
       user_id: {
         type: Sequelize.INTEGER,
         references: {
