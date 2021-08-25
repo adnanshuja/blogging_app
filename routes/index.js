@@ -10,12 +10,12 @@ module.exports = (app) => {
 
     // Service APIs
     app.post('/api/service/create', service.createService);
-    app.get('/api/service/get-detail', service.listAllServices);
+    app.get('/api/service/get-all', service.listAllServices);
     app.get('/api/service/get-detail/:id', service.getServiceById);
 
     //Blog APIs
     app.post('/api/blog/create', blog.createBlog);
-    app.get('/api/blog/get-detail', blog.listAllBlogs);
+    app.get('/api/blog/get-all', blog.listAllBlogs);
     app.get('/api/blog/get-detail/:id', blog.getBlogById);
 
 
