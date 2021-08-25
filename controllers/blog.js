@@ -18,7 +18,7 @@ const createBlog = async (req, res) => {
 const listAllBlogs = async (req, res) => {
     try{
         const blogs = await model.blog.findAll({
-            limit: 5,
+            limit: 6,
         order: [ [ 'createdAt', 'DESC' ]]
         })
 
