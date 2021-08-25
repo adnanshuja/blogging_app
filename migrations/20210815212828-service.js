@@ -42,6 +42,14 @@ module.exports = {
       summary2: {
         type: Sequelize.STRING,
       },
+      createdAt: {
+        type: Sequelize.DATE,
+        field: 'created_at',
+      },
+      updatedAt: {
+        type: Sequelize.DATE,
+        field: 'updated_at',
+      },
 
     });
   },
