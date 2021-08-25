@@ -22,7 +22,10 @@ const createService = async (req, res) => {
 
 const listAllServices = async (req, res) => {
     try{
-        const services = await model.service.findAll()
+        const services = await model.service.findAll({
+        limit: 9,
+        order: [ [ 'createdAt', 'DESC' ]]
+        });
 
         if(services.length === 0){
 
