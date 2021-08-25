@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const logger = require("morgan");
 const routes = require("./routes/index");
 const runMig = require("./initialize");
-const hostname = "127.0.0.1";
+const hostname = "0.0.0.0";
 const port = 3001;
 
 const app = express();
