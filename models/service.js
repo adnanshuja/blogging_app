@@ -11,12 +11,6 @@ module.exports = (sequelize, DataTypes) => {
             title: {
                 type: DataTypes.STRING,
             },
-
-            shortDescription: {
-
-                type: DataTypes.TEXT,
-            },
-
             header1: {
                 type: DataTypes.STRING,
             },
@@ -36,7 +30,12 @@ module.exports = (sequelize, DataTypes) => {
             summary1: {
                 type: DataTypes.STRING,
             },
-
+            summary1Details: {
+                type: DataTypes.TEXT,
+            },
+            summary2Details: {
+                type: DataTypes.TEXT,
+            },
             summary2: {
                 type: DataTypes.STRING,
             },
