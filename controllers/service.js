@@ -4,13 +4,14 @@ const createService = async (req, res) => {
     try{
         const service = await model.service.create({
             title: req.body.title,
-            shortDescription: req.body.shortDescription,
             header1: req.body.header1,
             description1: req.body.description1,
             header2: req.body.header2,
             description2: req.body.description2,
             summary1: req.body.summary1,
-            summary2: req.body.summary2
+            summary2: req.body.summary2,
+            summary1Details: req.body.summary1Details,
+            summary2Details: req.body.summary2Details
         })
 
         res.json({ success: true, message: 'Service created successfully', data: service });
