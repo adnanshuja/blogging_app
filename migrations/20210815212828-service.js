@@ -13,12 +13,6 @@ module.exports = {
       title: {
         type: Sequelize.STRING,
       },
-
-      shortDescription: {
-
-        type: Sequelize.TEXT,
-      },
-
       header1: {
         type: Sequelize.STRING,
       },
@@ -38,7 +32,12 @@ module.exports = {
       summary1: {
         type: Sequelize.STRING,
       },
-
+      summary1Details: {
+        type: Sequelize.TEXT,
+      },
+      summary2Details: {
+        type: Sequelize.TEXT,
+      },
       summary2: {
         type: Sequelize.STRING,
       },
